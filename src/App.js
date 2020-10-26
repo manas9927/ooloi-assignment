@@ -1,6 +1,5 @@
 import React from "react"
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import "./myStyle.css"
 
 import {
     Route, BrowserRouter as Router, Switch, Link
@@ -12,12 +11,12 @@ import Display from "./pages/display/"
 function App() {
     return(
         <Router>
-            <div className="switch">
+            <div>
                 <Link to="input">
-                    <Button variant="outlined" color="primary">Input</Button>
+	                <button class="btn"><span>Input Version</span></button>
                 </Link>
                 <Link to="display">
-                    <Button variant="outlined" color="primary">Display</Button>
+                    <button class="btn"><span>Display Version</span></button>
                 </Link>
             </div>
             <Switch>
