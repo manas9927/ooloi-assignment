@@ -12,7 +12,7 @@ import Display from "./pages/display/"
 function App() {
     return(
         <Router>
-            <div>
+            <div className="switch">
                 <Link to="input">
                     <Button variant="outlined" color="primary">Input</Button>
                 </Link>
