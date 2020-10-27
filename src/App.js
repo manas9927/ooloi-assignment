@@ -11,12 +11,12 @@ function App() {
     <Router>
       <div>
         <Link to="input">
-          <button class="switchButton">
+          <button className="switchButton">
             <span>Input Version</span>
           </button>
         </Link>
         <Link to="display">
-          <button class="switchButton">
+          <button className="switchButton">
             <span>Display Version</span>
           </button>
         </Link>
