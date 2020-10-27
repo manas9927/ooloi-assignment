@@ -1,4 +1,4 @@
-.btn {
+.switchButton {
   border: none;
   display: block;
   text-align: center;
@@ -16,12 +16,12 @@
   width: 250px;
 }
 
-.btn span {
+.switchButton span {
   position: relative; 
   z-index: 1;
 }
 
-.btn:after {
+.switchButton:after {
   content: "";
   position: absolute;
   left: 0;
@@ -35,7 +35,7 @@
   transform: translateX(-98%) translateY(-25%) rotate(45deg);
 }
 
-.btn:hover:after {
+.switchButton:hover:after {
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
@@ -50,12 +50,12 @@
   font-size: 25px; 
 }
 
-.inputBody {
+.componentBody {
     background-color: #EFF8FE;
     width: 100%;
 }
 
-.inputContainer {
+.componentContainer {
     padding: 80px 395px;
 }
 
@@ -73,15 +73,15 @@
 
 }
 
-.grid-container {
+.gridContainer {
     margin-top: 21px;
     display: grid;
     grid-template-columns: 0.0fr 2.6fr 0.0fr;
     grid-template-rows: 0fr 0fr;
     gap: 0px 0px;
     grid-template-areas:
-      "question inputQuestion delete"
-      "answer inputAnswer delete";
+      "question inputQuestion ext"
+      "answer inputAnswer ext";
   }
   
   .question { 
@@ -102,11 +102,11 @@
       margin-left: 27px;
     }
 
-  .delete { 
-      grid-area: delete; 
+  .ext { 
+      grid-area: ext; 
     }
 
-    .delete p {
+    .ext p {
         margin-top: 55px;
         margin-bottom: 55px;
     }
@@ -161,6 +161,34 @@
         background-color: #E0F0FD;
     }
 
-    .deleteButton:hover {
+    .indicatorButton{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        left: 1005px;
+        top: 318px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .deleteButton:hover, .addButton:hover, .indicatorButton:hover{
         background-color: #c1dff8;
     }
+
+    .addButtonContainer {
+        margin-left: 537px;
+        margin-right: 537px;
+    }
+
+    .displayQuestion p, .displayAnswer p{
+        width: 100%;
+        font-size: 18px;
+        line-height: 30.6px;
+        font-weight: 400px;
+        color: #25445C;
+        margin-left: 26px;
+    }
+      

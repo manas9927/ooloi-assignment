@@ -13,17 +13,16 @@ function App() {
         <Router>
             <div>
                 <Link to="input">
-	                <button class="btn"><span>Input Version</span></button>
+	                <button class="switchButton"><span>Input Version</span></button>
                 </Link>
                 <Link to="display">
-                    <button class="btn"><span>Display Version</span></button>
+                    <button class="switchButton"><span>Display Version</span></button>
                 </Link>
             </div>
             <Switch>
                 {/* <Route path="/Hello" component={Hello} /> */}
                 <Route path="/display" component={Display} />
                 <Route path="/input" exact component={Input} />
-                
             </Switch>
         </Router>
     )
