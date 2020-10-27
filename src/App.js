@@ -22,7 +22,6 @@ function App() {
         </Link>
       </div>
       <Switch>
-        {/* <Route path="/Hello" component={Hello} /> */}
         <Route path="/display" component={Display} />
         <Route path="/input" exact component={Input} />
       </Switch>
