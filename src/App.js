@@ -1,8 +1,6 @@
 import React from "react";
 import "./myStyle.css";
-
 import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
-
 import Input from "./pages/input/";
 import Display from "./pages/display/";
 
