@@ -1,6 +1,6 @@
 import React from "react";
 import DisplayFaq from "./displayFaq"
-import faqData from "./faqData"
+// import faqData from "./faqData"
 import "../../myStyle.css"
 
 function display() {
