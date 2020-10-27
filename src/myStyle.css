@@ -12,12 +12,12 @@
   background-color: #222;
   padding: 17px 60px;
   margin: 20px auto;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   width: 250px;
 }
 
 .switchButton span {
-  position: relative; 
+  position: relative;
   z-index: 1;
 }
 
@@ -29,8 +29,8 @@
   height: 490%;
   width: 140%;
   background: #78c7d2;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
   transform: translateX(-98%) translateY(-25%) rotate(45deg);
 }
@@ -47,152 +47,156 @@
 
 .link a {
   color: #000;
-  font-size: 25px; 
+  font-size: 25px;
 }
 
 .componentBody {
-    background-color: #EFF8FE;
-    width: 100%;
+  background-color: #eff8fe;
+  width: 100%;
 }
 
 .componentContainer {
-    padding: 80px 395px;
+  padding: 80px 395px;
 }
 
 .mainHeading {
-    color: #9CA3A6;
-    font-size: 12px;
-    font-weight: 700;
+  color: #9ca3a6;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .subHeading {
-    color: #25445C;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 400;
-
+  color: #25445c;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .gridContainer {
-    margin-top: 21px;
-    display: grid;
-    grid-template-columns: 0.0fr 2.6fr 0.0fr;
-    grid-template-rows: 0fr 0fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "question inputQuestion ext"
-      "answer inputAnswer ext";
-  }
-  
-  .question { 
-      grid-area: question;
-    }
-  
-  .answer { 
-      grid-area: answer; 
-    }
-  
-  .inputQuestion { 
-      grid-area: inputQuestion;
-      margin-left: 27px;
-    }
-  
-  .inputAnswer { 
-      grid-area: inputAnswer;
-      margin-left: 27px;
-    }
+  margin-top: 21px;
+  display: grid;
+  grid-template-columns: 0fr 2.6fr 0fr;
+  grid-template-rows: 0fr 0fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "question inputQuestion ext"
+    "answer inputAnswer ext";
+}
 
-  .ext { 
-      grid-area: ext; 
-    }
+.question {
+  grid-area: question;
+}
 
-    .ext p {
-        margin-top: 55px;
-        margin-bottom: 55px;
-    }
+.answer {
+  grid-area: answer;
+}
 
-    .question p, .answer p {
-        color: #64B5F6;
-        line-height: 30px;
-        font-size: 20px;
-        letter-spacing: -1%;
-        font-weight: 700;
-    }
+.inputQuestion {
+  grid-area: inputQuestion;
+  margin-left: 27px;
+}
 
-    .inputQuestion input, .inputAnswer input {
-        width: 100%;
-        background-color: transparent;
-        border: none;
-        font-size: 18px;
-        line-height: 30.6px;
-        font-weight: 400;
-        color: #25445C;
-        margin-top: 19px;
-        margin-bottom: 19px;
-        outline: none;
-    }
+.inputAnswer {
+  grid-area: inputAnswer;
+  margin-left: 27px;
+}
 
-    .inputQuestion input::placeholder, .inputAnswer input::placeholder {
-        color: #64B5F6;
-        font-weight: 400;
-    }
+.ext {
+  grid-area: ext;
+}
 
-    .deleteButton {
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        left: 1005px;
-        top: 318px;
-        border: none;
-        outline: none;
-        background-color: #E0F0FD;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+.ext p {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
 
-    .addButton {
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        left: 1005px;
-        top: 318px;
-        border: none;
-        outline: none;
-        background-color: #E0F0FD;
-    }
+.question p,
+.answer p {
+  color: #64b5f6;
+  line-height: 30px;
+  font-size: 20px;
+  letter-spacing: -1%;
+  font-weight: 700;
+}
 
-    .indicatorButton{
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        left: 1005px;
-        top: 318px;
-        border: none;
-        outline: none;
-        background-color: transparent;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+.inputQuestion input,
+.inputAnswer input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  line-height: 30.6px;
+  font-weight: 400;
+  color: #25445c;
+  margin-top: 19px;
+  margin-bottom: 19px;
+  outline: none;
+}
 
-    .deleteButton:hover, .addButton:hover, .indicatorButton:hover{
-        background-color: #c1dff8;
-    }
+.inputQuestion input::placeholder,
+.inputAnswer input::placeholder {
+  color: #64b5f6;
+  font-weight: 400;
+}
 
-    .addButtonContainer {
-        margin-left: 537px;
-        margin-right: 537px;
-    }
+.deleteButton {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  left: 1005px;
+  top: 318px;
+  border: none;
+  outline: none;
+  background-color: #e0f0fd;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
-    .displayQuestion p, .displayAnswer p{
-        width: 100%;
-        font-size: 18px;
-        line-height: 30.6px;
-        font-weight: 400px;
-        color: #25445C;
-        margin-left: 26px;
-    }
+.addButton {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  left: 1005px;
+  top: 318px;
+  border: none;
+  outline: none;
+  background-color: #e0f0fd;
+}
 
-    .faqEnd {
-        border-top: 1px dashed #D8DADC;
-    }
-      
+.indicatorButton {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  left: 1005px;
+  top: 318px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.deleteButton:hover,
+.addButton:hover,
+.indicatorButton:hover {
+  background-color: #c1dff8;
+}
+
+.addButtonContainer {
+  margin-left: 537px;
+  margin-right: 537px;
+}
+
+.displayQuestion p,
+.displayAnswer p {
+  width: 100%;
+  font-size: 18px;
+  line-height: 30.6px;
+  font-weight: 400px;
+  color: #25445c;
+  margin-left: 26px;
+}
+
+.faqEnd {
+  border-top: 1px dashed #d8dadc;
+}
